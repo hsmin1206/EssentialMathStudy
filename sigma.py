@@ -19,3 +19,18 @@ summation2 = Sum(2*i, (i, 1, n))
 # n을 5로 지정하면 숫자 1에서 5까지 반복합니다.
 up_to_5 = summation2.subs(n, 5)
 print(up_to_5.doit())
+
+# 심파이로 표현식 간소화하기
+from sympy import *
+
+x = symbols('x')
+expr = x**2 / x**5
+print(expr) # x**-3
+
+# 파이썬에서 로그 함수 사용하기
+from math import log
+
+# 2를 거듭제곱해 8이 되는 지수는?
+x = log(8, 2)
+print(x) # 3.0
+
